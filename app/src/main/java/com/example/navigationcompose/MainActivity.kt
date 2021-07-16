@@ -11,16 +11,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            SimpleComposable()
+            Navigation()
         }
     }
 }
-@Composable
-fun SimpleComposable() {
-    Text("hola mundo")
-}
+
 @Preview
 @Composable
 fun ComposablePreview() {
-    SimpleComposable()
+    Navigation()
 }
